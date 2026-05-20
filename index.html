@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon"><i class="fa-solid fa-cloud"></i></div>
+      <div class="brand-text">
+        <span class="brand-name">Weather</span>
+        <span class="brand-tagline">tagline goes here</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html"   class="nav-link active">Home</a></li>
+      <li><a href="#"            class="nav-link">News</a></li>
+      <li><a href="#"            class="nav-link">Live cameras</a></li>
+      <li><a href="#"            class="nav-link">Photos</a></li>
+      <li><a href="contact.html" class="nav-link">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle"><i class="fa-solid fa-bars"></i></button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="search-bar">
+        <input type="text" id="cityInput" class="search-input" placeholder="Find your location..." autocomplete="off" />
+        <button id="findBtn" class="find-btn">Find</button>
+      </div>
+    </div>
+
+    <!-- WEATHER GRID -->
+    <div class="weather-grid" id="weatherGrid">
+
+      <!-- ── Card 1: Today ── -->
+      <div class="card-today">
+        <div class="card-header">
+          <span class="card-day"  id="day0">--</span>
+          <span class="card-date" id="date0">--</span>
+        </div>
+        <p class="city-name" id="city0">--</p>
+        <p class="temp-today" id="temp0">--</p>
+        <div class="weather-icon-wrap">
+          <img src="" alt="" id="iconImg0" />
+        </div>
+        <p class="condition-label" id="cond0">--</p>
+        <div class="extra-info">
+          <span class="info-item"><i class="fa-solid fa-droplet"></i> <span id="humidity0">--</span> %</span>
+          <span class="info-item"><i class="fa-solid fa-wind"></i>    <span id="wind0">--</span> km/h</span>
+          <span class="info-item"><i class="fa-regular fa-compass"></i> <span id="dir0">--</span></span>
+        </div>
+      </div>
+
+      <!-- ── Card 2: Day+1 ── -->
+      <div class="card-next">
+        <div class="card-header">
+          <span class="card-day" id="day1">--</span>
+        </div>
+        <div class="card-body-next">
+          <div class="weather-icon-wrap">
+            <img src="" alt="" id="iconImg1" />
+          </div>
+          <p class="temp-next" id="temp1">--</p>
+          <p class="temp-low"  id="low1">--</p>
+          <p class="condition-label" id="cond1">--</p>
+        </div>
+      </div>
+
+      <!-- ── Card 3: Day+2 ── -->
+      <div class="card-next">
+        <div class="card-header">
+          <span class="card-day" id="day2">--</span>
+        </div>
+        <div class="card-body-next">
+          <div class="weather-icon-wrap">
+            <img src="" alt="" id="iconImg2" />
+          </div>
+          <p class="temp-next" id="temp2">--</p>
+          <p class="temp-low"  id="low2">--</p>
+          <p class="condition-label" id="cond2">--</p>
+        </div>
+      </div>
+
+    </div><!-- /weather-grid -->
+
+    <p class="error-msg" id="errorMsg"></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-left">
+      <input type="email" placeholder="Enter your email to subscribe..." class="footer-email" />
+      <button class="footer-subscribe-btn">Subscribe</button>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

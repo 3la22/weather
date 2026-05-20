@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather - Contact</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav class="navbar">
+    <div class="nav-brand">
+      <div class="brand-icon">
+        <i class="fa-solid fa-cloud"></i>
+      </div>
+      <div class="brand-text">
+        <span class="brand-name">Company name</span>
+        <span class="brand-tagline">tagline goes here</span>
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html" class="nav-link">Home</a></li>
+      <li><a href="#" class="nav-link">News</a></li>
+      <li><a href="#" class="nav-link">Live cameras</a></li>
+      <li><a href="#" class="nav-link">Photos</a></li>
+      <li><a href="contact.html" class="nav-link active">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <!-- ========== BREADCRUMB ========== -->
+  <div class="breadcrumb-bar">
+    <div class="breadcrumb-inner">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">→</span>
+      <span>Contact</span>
+    </div>
+  </div>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section class="contact-section">
+    <div class="contact-left">
+      <div class="contact-map-placeholder">
+        <!-- Map placeholder -->
+        <div class="map-grey"></div>
+      </div>
+      <div class="contact-info">
+        <p><i class="fa-solid fa-location-dot"></i>
+          <span>Company Name INC.<br/>2803 Avenue Street, Los Angeles</span>
+        </p>
+        <p>
+          <i class="fa-solid fa-phone"></i>
+          <span>+1 800 314 235</span>
+        </p>
+        <p>
+          <i class="fa-regular fa-envelope"></i>
+          <span>contact@companyname.com</span>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-right">
+      <h2 class="contact-title">Contact us</h2>
+      <p class="contact-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consectetur inventore ducimus, facilis, numquam id soluta omnis eius recusandae nesciunt vero repellat harum cum. Nisi facilis odit hic, ipsum sed!</p>
+
+      <div class="contact-form">
+        <div class="form-row">
+          <input type="text" placeholder="Your name..." class="form-input" />
+          <input type="email" placeholder="Email Addresss..." class="form-input" />
+        </div>
+        <div class="form-row">
+          <input type="text" placeholder="Company name..." class="form-input" />
+          <input type="url" placeholder="Website..." class="form-input" />
+        </div>
+        <textarea placeholder="Message..." class="form-textarea"></textarea>
+        <div class="form-submit-row">
+          <button class="submit-btn">Submit</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-left">
+      <input type="email" placeholder="Enter your email to subscribe..." class="footer-email" />
+      <button class="footer-subscribe-btn">Subscribe</button>
+    </div>
+    <div class="footer-social">
+      <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-google-plus-g"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-pinterest-p"></i></a>
+    </div>
+    <div class="footer-copy">
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+    </div>
+  </footer>
+
+</body>
+</html>
